@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>常用高阶函数 | CHAO BLOG</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="this is a blog build by vuepress">
+    
+    <link rel="preload" href="/assets/css/0.styles.d3d7476b.css" as="style"><link rel="preload" href="/assets/js/app.f97d11e0.js" as="script"><link rel="preload" href="/assets/js/2.c4a55d75.js" as="script"><link rel="preload" href="/assets/js/18.a14128ad.js" as="script"><link rel="prefetch" href="/assets/js/10.cd830b02.js"><link rel="prefetch" href="/assets/js/11.7c4cbfc9.js"><link rel="prefetch" href="/assets/js/12.2fc5ef62.js"><link rel="prefetch" href="/assets/js/13.35b2e41a.js"><link rel="prefetch" href="/assets/js/14.15d3b615.js"><link rel="prefetch" href="/assets/js/15.3b004cd7.js"><link rel="prefetch" href="/assets/js/16.ef0b6eaf.js"><link rel="prefetch" href="/assets/js/17.516ad126.js"><link rel="prefetch" href="/assets/js/19.48135194.js"><link rel="prefetch" href="/assets/js/20.f53e3b63.js"><link rel="prefetch" href="/assets/js/21.ec6e36d2.js"><link rel="prefetch" href="/assets/js/22.e7715ba2.js"><link rel="prefetch" href="/assets/js/23.e0693374.js"><link rel="prefetch" href="/assets/js/24.a36116e9.js"><link rel="prefetch" href="/assets/js/25.634dca41.js"><link rel="prefetch" href="/assets/js/26.b9622f5c.js"><link rel="prefetch" href="/assets/js/27.eb49a96a.js"><link rel="prefetch" href="/assets/js/28.84d60169.js"><link rel="prefetch" href="/assets/js/29.53bf131a.js"><link rel="prefetch" href="/assets/js/3.0ec01e5e.js"><link rel="prefetch" href="/assets/js/30.1331a972.js"><link rel="prefetch" href="/assets/js/31.ac0a72dd.js"><link rel="prefetch" href="/assets/js/4.2176f0d8.js"><link rel="prefetch" href="/assets/js/5.91c18d5d.js"><link rel="prefetch" href="/assets/js/6.537e369f.js"><link rel="prefetch" href="/assets/js/7.426639d5.js"><link rel="prefetch" href="/assets/js/8.32bf23b4.js"><link rel="prefetch" href="/assets/js/9.dc91dd0d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d3d7476b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">CHAO BLOG</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文章分类" class="dropdown-title"><span class="title">文章</span> <span class="arrow down"></span></button> <button type="button" aria-label="文章分类" class="mobile-dropdown-title"><span class="title">文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/articles/前端/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-subitem"><a href="/articles/前端/js/" class="nav-link">
+  js
+</a></li><li class="dropdown-subitem"><a href="/articles/前端/Vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/articles/前端/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/articles/前端/library/" class="nav-link">
+  工具库
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/articles/设计/" class="nav-link">
+  设计
+</a></li><li class="dropdown-item"><!----> <a href="/articles/后端/" class="nav-link">
+  后端
+</a></li><li class="dropdown-item"><!----> <a href="/articles/编程通用/" class="nav-link">
+  编程通用
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文章分类" class="dropdown-title"><span class="title">文章</span> <span class="arrow down"></span></button> <button type="button" aria-label="文章分类" class="mobile-dropdown-title"><span class="title">文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/articles/前端/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-subitem"><a href="/articles/前端/js/" class="nav-link">
+  js
+</a></li><li class="dropdown-subitem"><a href="/articles/前端/Vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/articles/前端/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/articles/前端/library/" class="nav-link">
+  工具库
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/articles/设计/" class="nav-link">
+  设计
+</a></li><li class="dropdown-item"><!----> <a href="/articles/后端/" class="nav-link">
+  后端
+</a></li><li class="dropdown-item"><!----> <a href="/articles/编程通用/" class="nav-link">
+  编程通用
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/articles/前端/js/常用高阶函数.html" class="active sidebar-link">常用高阶函数</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/articles/前端/js/常用高阶函数.html#防抖" class="sidebar-link">防抖</a></li><li class="sidebar-sub-header"><a href="/articles/前端/js/常用高阶函数.html#节流" class="sidebar-link">节流</a></li><li class="sidebar-sub-header"><a href="/articles/前端/js/常用高阶函数.html#延迟队列" class="sidebar-link">延迟队列</a></li><li class="sidebar-sub-header"><a href="/articles/前端/js/常用高阶函数.html#once" class="sidebar-link">once</a></li></ul></li><li><a href="/articles/前端/js/面向对象.html" class="sidebar-link">面向对象</a></li><li><a href="/articles/前端/js/异步.html" class="sidebar-link">异步</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="防抖"><a href="#防抖" class="header-anchor">#</a> 防抖</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">debounce</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> delay</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> timer <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  
+  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>timer <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">clearTimeout</span><span class="token punctuation">(</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    timer <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> delay<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="节流"><a href="#节流" class="header-anchor">#</a> 节流</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">throttle</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> delay</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">let</span> flag <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        flag <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> delay<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    flag <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="延迟队列"><a href="#延迟队列" class="header-anchor">#</a> 延迟队列</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">delayQueue</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> delay</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> cnt <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+  <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>cnt <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      cnt<span class="token operator">--</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> delay<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    cnt<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="once"><a href="#once" class="header-anchor">#</a> once</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">once</span><span class="token punctuation">(</span><span class="token parameter">fn</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> flag <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      flag <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span> 
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/articles/前端/js/面向对象.html">
+        面向对象
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.f97d11e0.js" defer></script><script src="/assets/js/2.c4a55d75.js" defer></script><script src="/assets/js/18.a14128ad.js" defer></script>
+  </body>
+</html>
